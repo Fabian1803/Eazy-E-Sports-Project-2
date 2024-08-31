@@ -1,0 +1,9 @@
+import './StoreStyles/headerFooter.scss';
+import './StoreStyles/kidsSS.scss';
+import './StoreStyles/menSS.scss';
+import './StoreStyles/colecSS.scss';
+import './StoreStyles/trendsSS.scss';
+import './StoreStyles/womensSS.scss';
+import './StoreStyles/homeSS.scss';
+import './StoreStyles/auth.scss';
+import './StoreStyles/login.scss';

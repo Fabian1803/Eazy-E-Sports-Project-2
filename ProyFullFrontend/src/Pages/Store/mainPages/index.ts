@@ -1,0 +1,10 @@
+export { default as auth } from './auth';
+export { default as car } from './car';
+export { default as follows } from './follows';
+export { default as home } from './home';
+export { default as kids } from './kids';
+export { default as men } from './men';
+export { default as outStore } from './outStore';
+export { default as store } from './store';
+export { default as women } from './women';
+export { default as login } from './login';

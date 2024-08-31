@@ -1,0 +1,96 @@
+:root,
+.light {
+    --fontTexClear: white;
+    --fontTexDark: black;
+}
+
+.dark {
+    --fontTexClear: black;
+    --fontTexDark: white;
+}
+
+.homeCont {
+    width: 100%;
+    height: auto;
+    background-color: var(--fontTexClear);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .carousel1 {
+        border: 2px solid;
+        background-color: blue;
+        height: calc(80vw * 0.5);
+        max-height: 900px;
+    }
+
+    .discountSec1,
+    .discountSec2,
+    .discountSec3,
+    .discountSec4 {
+        background-color: gray;
+        height: calc(70vw * 0.5);
+        min-height: 400px;
+    }
+
+    .ad1,
+    .genderSec,
+    .ad2 {
+        background-color: green;
+        height: calc(65vw * 0.5);
+        min-height: 600px;
+    }
+
+    .discountSec1 {}
+
+    .ad1 {}
+
+    .discountSec2 {}
+
+    .genderSec {}
+
+    .discountSec3 {}
+
+    .ad2 {}
+
+    .discountSec4 {}
+}
+
+
+@media (max-width: 1140px) {
+    .homeCont {
+        .carousel1 {
+            height: calc(250vw * 0.4);
+            max-height: 700px;
+        }
+
+        .discountSec1,
+        .discountSec2,
+        .discountSec3,
+        .discountSec4 {}
+
+        .ad1,
+        .genderSec {
+            height: calc(85vw * 0.5);
+            min-height: 600px;
+        }
+
+        .discountSec1 {}
+
+        .ad1 {}
+
+        .discountSec2 {}
+
+        .genderSec {}
+
+        .discountSec3 {}
+
+        .ad2 {
+            height: calc(70vw * 2);
+            min-height: 600px;
+            background-color: red;
+        }
+
+        .discountSec4 {}
+    }
+
+}

@@ -1,0 +1,101 @@
+$family1: Verdana, Geneva, Tahoma, sans-serif;
+$family2: sans-serif;
+.authCont {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 0 0;
+    section {
+        display: flex;
+        flex-direction: column;
+        width: calc(90% * 0.5);
+        min-width: 750px;
+        .titleA {
+            display: flex;
+            justify-content: space-between;
+            h1 {
+                font-size: 23px;
+                font-family: $family2;
+                color: var(--fontTexDark);
+            }
+            div {
+                font-family: $family1;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                width: auto;
+                gap: 15px;
+                p {
+                    color: var(--fontTexDark);
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                }
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                }
+            }
+        }
+        form {
+            display: grid;
+            gap: 20px;
+            padding: 1%;
+            input {
+                height: 40px;
+                border-radius: 8px;
+                border: none;
+                outline: none;
+            }
+            #btnCreate {
+                width: 100%;
+                height: 45px;
+                border-color: #97A2C2;
+                background-color: transparent;
+                color: #97A2C2;
+                border: 1px solid;
+                border-radius: 8px;
+            }
+        }
+        a {
+            margin: 1.5%;
+            color: var(--fontTexDark);
+            font-family: $family1;
+            text-decoration: none;
+            height: 40px;
+            display: flex;
+            align-items: end;
+            p{
+                height: 50%;
+            }
+            p:hover {
+                border-bottom: 2px solid var(--fontTexDark);
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    .authCont {
+        padding: 0;
+        section {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-width: auto;
+            padding: 15% 15% 5% 15%;
+            .titleA {
+                flex-direction: column;
+                gap: 5px;
+                h1, div{
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    a{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

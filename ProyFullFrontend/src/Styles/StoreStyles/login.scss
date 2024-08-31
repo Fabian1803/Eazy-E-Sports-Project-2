@@ -1,0 +1,76 @@
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.loginCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+
+    .lCont {
+        width: 300px;
+        height: auto;
+        padding: 1%;
+        .c1 {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: auto;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                text-decoration: none;
+                p {
+                    font-size: 18px;
+                    color: black;
+                }
+            }
+        }
+
+        .separator {
+            border-top: 0.5px solid gray;
+            height: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2%;
+            p {
+                background-color: white;
+                padding: 0 5px 0 5px;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-top: 20px;
+            label{
+                font-size: 15px ;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            input{
+                height: 30px;
+                outline: none;
+                border-radius: 5px;
+                border: 1px solid gray;
+            }
+            button{
+                margin-top: 10px;
+                height: 35px;
+                font-size: 18px;
+                border: none;
+            }
+        }
+    }
+}
